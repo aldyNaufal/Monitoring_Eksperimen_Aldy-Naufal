@@ -27,7 +27,7 @@ from prometheus_exporter import (
 # ====== 1. Load model ======
 
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = BASE_DIR / "models" / "tfidf_svc_genre_game_basic.pkl"
+MODEL_PATH = BASE_DIR / "models" / "tfidf_svc_genre_game_best_tuned_local.pkl"
 
 if not MODEL_PATH.exists():
     raise FileNotFoundError(f"Model tidak ditemukan di {MODEL_PATH}")
